@@ -9,7 +9,6 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
 
 export default {
   props: {
@@ -32,20 +31,19 @@ export default {
   },
   methods: {
     async sharePage(){
-      let self = this
-      const url : string = process.env.baseUrl + self.$nuxt.$route.path
+      const url : string = process.env.baseUrl + this.$nuxt.$route.path
       if(navigator.share) {
         try {
           await navigator.share({
-            title: self.title,
-            text: self.description,
+            title: this.title,
+            text: this.description,
             url
           })
-          self.$ga.event({
-            eventCategory: 'Share Button',
-            eventAction: 'click',
-            eventLabel: url,
-          })
+          // this.$ga.event({
+          //   eventCategory: 'Share Button',
+          //   eventAction: 'click',
+          //   eventLabel: url,
+          // })
           console.info('Successfully Shared')
         } catch (err) {
           console.error(err)

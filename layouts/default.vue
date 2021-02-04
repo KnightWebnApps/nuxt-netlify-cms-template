@@ -3,7 +3,7 @@
     <NavBar />
     <main>
       <Nuxt />
-      <ShareButton :title="'Basic Template'" :description="'This is a description'" />
+      <!-- <ShareButton :title="'Basic Template'" :description="'This is a description'" /> -->
     </main>
     <footer class="center-text">
       <div class="bi-column">
@@ -28,11 +28,14 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import ShareButton from '~/components/ShareButton.vue'
+// import ShareButton from '~/components/ShareButton.vue'
 import NavBar from '~/components/NavBar.vue'
 
 export default Vue.extend({
-  components: { ShareButton, NavBar }
+  components: { 
+    // ShareButton, 
+    NavBar 
+  }
 })
 </script>
 
