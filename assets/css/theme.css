@@ -1,0 +1,80 @@
+:root {
+  /* Color Theme */
+  --primary: var(--yellow);
+  --secondary: var(--purple);
+  --accent: var(--orange);
+  --error: var(--red);
+  --success: var(--green);
+  --disabled: var(--grey);
+  --font-color: var(--black);
+  --font-color-light: hsla(0, 0%, calc(var(--bl) + 25%), 1);
+
+  /* Color Pallette */
+  --bl: 20%;
+  --black: hsl(0, 0%, var(--bl));
+  --white: #fff;
+  --grey: #cacaca;
+  --red: #ff0000;
+  --green: #00ff00;
+  --blue: hsla(200, 50%, calc(60% - 30%), 1);
+  --yellow: #ffff00;
+  --light-blue: #00ffff;
+  --purple: #ff00ff;
+  --orange: #ff7b00;
+
+  /* Gradients */
+
+  /* Typography */
+  --main-heading-weight: 600;
+  --sub-heading-weight: 400;
+  --font-weight: 300;
+  --main-heading-size: 2.625rem;
+  --sub-heading-size: 2.25rem;
+  --font-size: 1.188rem;
+  --font-size-sm: .880rem;
+
+  /* Card */
+  --card-padding: 5px 12px;
+  --card-background: var(--secondary);
+  --card-max-height: 600px;
+  --card-max-width: 300px;
+  
+  /* Button */
+  --button-border-radius: 4px;
+  --button-padding: 5px 12px;
+  --button-border: 1px solid var(--black);
+  
+  /* Form */
+  --border-top: none;
+  --border-bottom: 2px solid var(--black);
+  --border-left: none;
+  --border-right: none;
+  --textarea-border-top: none;
+  --textarea-border-bottom: 2px solid var(--black);
+  --textarea-border-left: none;
+  --textarea-border-right: 1px solid var(--black);
+  --invalid-color: var(--error);
+  --invalid-background: transparent;
+  --input-border-radius: 0px;
+  --select-icon: url('~assets/images/arrow.svg');
+
+  /* Animation */
+  --hover-transition: filter 100ms ease-out, background-color 100ms ease-out,
+    color 100ms ease-out, box-shadow 100ms ease-out, border 100ms ease-out;
+
+  /* Padding and Margin */
+  --pad: 15px;
+  --pad-x: 0 15px;
+  --pad-y: 0 15px;
+  --footer-padding: 15px;
+
+  /* Others */
+  --border-radius: 4px;
+  --grid-width: 250px;
+  --sidebar-width: 150px;
+  --shadow: 5px 5px 7px rgba(51, 51, 51, 0.425), 3px 3px 5px #33333396;
+  --focus: solid 4px var(--light-blue);
+  --gap: 20px;
+  --unordered-list-style: square;
+  --marker-color: var(--accent);
+}
